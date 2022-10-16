@@ -7,7 +7,54 @@ body, ul {
   padding: 0;
 }
 
+ul, li {
+  list-style: none;
+}
+
 /*header*/
+
+header {
+  background-color: #0024f0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1475px;
+}
+
+
+.logo img {
+  display: block;
+  width: 97px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.nav-contact {
+  display: flex;
+}
+
+.nav-contact li {
+  margin-left: 40px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.navigation .contact  {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 18px 36px;
+}
 
 /*main*/
 
