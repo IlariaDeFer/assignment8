@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body, ul {
+body, ul, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -19,14 +19,16 @@ header {
   padding-bottom: 40px;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
   margin: 0 auto;
   max-width: 1475px;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .logo img {
   display: block;
@@ -37,6 +39,8 @@ header {
 
 .nav-contact {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-contact li {
@@ -47,6 +51,7 @@ header {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  display: block;
 }
 
 .navigation .contact  {
@@ -57,5 +62,67 @@ header {
 }
 
 /*main*/
+
+.service-title h2 {
+  font-size: 32px;
+}
+
+.dots {
+  display: flex;
+}
+
+.dot {
+  background-color: #0024f0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  opacity: 30%;
+}
+
+.dot.selected {
+  opacity: 1;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.services {
+  display: flex;
+}
+
+.main-content {
+  flex-direction: column;
+}
+
+.color {
+  background-color: #f9f9f9;
+  width: 70px;
+  height: 70px;
+}
+
+.color.blue {
+  background-color: #0024f0;
+}
+
+.services h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.service-item {
+  margin-right: 25px;
+}
+
+.service-item.last {
+  margin-right: 0;
+}
 
 /*footer*/
